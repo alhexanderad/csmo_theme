@@ -1,0 +1,209 @@
+.main-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.main-title p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+/** Property box start **/
+.car-box {
+  position: relative;
+  margin-bottom: 30px;
+  background: #fff;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  z-index: 9;
+  border-radius: 5px;
+}
+
+.car-thumbnail {
+  position: relative;
+}
+
+.car-thumbnail:before {
+  content: "";
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 8;
+  background: linear-gradient(to top, rgba(47, 45, 45, 0.9) 0%, rgba(0, 0, 0, 0.45) 35%, rgba(2, 2, 2, 0) 60%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 4px 4px 0 0;
+  opacity: 1;
+}
+
+.carbox-overlap-wrapper {
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: 998;
+  color: #FFF;
+  left: 0;
+  top: 0;
+}
+
+.overlap-box {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carbox-overlap-wrapper h2 {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+}
+
+.carbox-overlap-wrapper h4 {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  line-height: 26px;
+  color: #fff;
+}
+
+.car-magnify-gallery {
+  display: inline-block;
+}
+
+.car-thumbnail:hover>.carbox-overlap-wrapper {
+  visibility: visible;
+  top: 0;
+  cursor: pointer;
+  transition: all .15s linear;
+}
+
+.overlap-btns-area img {
+  display: none;
+}
+
+.overlap-btn {
+  border: solid 1px #fff;
+}
+
+.overlap-btn {
+  width: 36px;
+  height: 36px;
+  line-height: 35px;
+  display: inline-block;
+  color: #FFF;
+  margin: 16px 2px;
+  border-radius: 3px;
+  font-size: 13px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.overlap-btn:hover {
+  text-decoration: none;
+  color: #FFF;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  background-color: #f0151f;
+  border-color: #f0151f;
+  transition: .5s;
+}
+
+.car-box img {
+  border-radius: 5px;
+}
+
+.car-box .detail .title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.car-box .detail .title a:hover {
+  color: #343a40;
+}
+
+.car-box .detail .location {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.car-box .detail .location a {
+  color: #5f5e5e;
+}
+
+.car-box .detail {
+  padding: 25px 20px 10px;
+}
+
+.car-box .facilities-list {
+  position: absolute;
+  bottom: 0;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.36);
+}
+
+.car-box .footer {
+  border-top: 1px solid #e5e5e5;
+  background: #fff;
+  font-size: 14px;
+}
+
+.car-box .footer .ratings {
+  font-size: 15px;
+  color: orange;
+}
+
+.car-box .footer {
+  color: #535353;
+  font-size: 15px;
+  border-top: solid 1px #efefef;
+}
+
+.car-box .footer .price {
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 20px;
+  margin-bottom: 0;
+  line-height: 49px;
+}
+
+.car-box .days {
+  line-height: 49px;
+  padding-left: 20px;
+}
+
+.car-box .facilities-list li {
+  list-style: none;
+  float: left;
+  width: 33.33%;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.car-box .facilities-list li span i {
+  margin-right: 5px;
+}
+
+
+.car-box .footer .cartype {
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 20px;
+  margin-bottom: 0;
+  line-height: 49px;
+  color: #f0151f;
+}

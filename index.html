@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSMO-USED-CAR</title>
+
+  <!-- Boostrap CSS de debe tener 5.3.2 > update -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/css/lightgallery.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"
+    integrity="sha512-pXR0JHbYm9+EGib6xR/w+uYs/u2V84ofPrBpkgLYyKvhZYJtUUvKSy1pgi8tJZAacsPwgf1kbhI4zwgu8OKOqA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--Fonts and Icons -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
+
+
+  <link rel="stylesheet" href="./css/style.css">
+
+
+
+  <style>
+    .lg-outer.lg-thumb-open .lg-thumb-outer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar bg-light navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto" href="#">COME SEE & MAKE OFFER</a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">COME SEE & MAKE OFFER</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="test.html">CARS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="cars.html">FINANCE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          ENGLISH
+        </button>
+        <ul class="dropdown-menu">
+          <li><button class="dropdown-item" type="button">ESPAÑOL</button></li>
+        </ul>
+      </div>
+
+      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <!-- Hero -->
+  <section class="hero-section">
+    <div class="container d-flex align-items-center justify-content-center fs-1 flex-column">
+      <h1 style="color: white;">Cars Used</h1>
+      <h2 style="color: white;">Come Right Now</h2>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+
+
+  <!--latest cars start -->
+  <div class="featured-car content-area">
+    <div class="container">
+      <!-- Main Title -->
+      <div class="main-title">
+        <h1>Latest cars</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, nemo quasi magni perspiciatis dolores
+          nesciunt.</p>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="car-box">
+            <div class="car-thumbnail">
+              <a href="car-details.html" class="car-img">
+                <div class="tag">For Sale</div>
+                <img class="d-block w-100" src="./img/car-1.jpg" alt="car">
+                <div class="facilities-list clearfix">
+                  <ul>
+                    <li>
+                      <span><i class="flaticon-way"></i></span>4,000 km
+                    </li>
+                    <li>
+                      <span><i class="flaticon-calendar-1"></i></span>2020
+                    </li>
+                    <li>
+                      <span><i class="flaticon-manual-transmission"></i></span>Manual
+                    </li>
+                  </ul>
+                </div>
+              </a>
+              <div class="carbox-overlap-wrapper">
+                <div class="overlap-box">
+                  <div class="overlap-btns-area" id="lightgallery">
+                    <div class="car-magnify-gallery">
+                      <a href="img/car-1.jpg" class="overlap-btn">
+                        <i class="fa fa-expand"></i>
+                        <img class="hidden" src="img/car-1.jpg">
+                      </a>
+                      <a href="img/car-2.jpg" class="hidden">
+                        <img class="hidden" src="img/car-2.jpg">
+                      </a>
+                      <a href="img/car-3.jpg" class="hidden">
+                        <img class="hidden" src="img/car-3.jpg">
+                      </a>
+                      <a href="img/car-4.jpg" class="hidden">
+                        <img class="hidden" src="img/car-4.jpg">
+                      </a>
+                      <a href="img/car-5.jpg" class="hidden">
+                        <img class="hidden" src="img/car-5.jpg">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detail">
+              <h1 class="title">
+                <a href="car-details.html">Lamborghini Huracán</a>
+              </h1>
+              <div class="location">
+                <a href="car-details.html">
+                  <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
+                </a>
+              </div>
+            </div>
+            <div class="footer clearfix">
+              <div class="pull-left ratings days">
+                <p class="cartype">Sedan</p>
+              </div>
+              <div class="pull-right">
+                <p class="price">$850.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Latest cars End-->
+  <!-- Footer Start -->
+  <footer class="bg-dark">
+    <div class="container text-light text-center">
+      <p class="display-5 mb-3">8macDev</p>
+      <small class="text-white-50">&copy; Copyright by AD. All rights reserved</small>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Boostrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/js/lightgallery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-thumbnail/1.2.1/lg-thumbnail.min.js"
+    integrity="sha512-IwXJ9hfJX95JVsCjHrWJ6/EBoyTZdEJxGTNX2H9wKinWDnWsP23cmtxBTjQiuwuPqi2xIvXO43wayj4MvjrAwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#lightgallery').lightGallery({
+        selector: '.car-magnify-gallery a',
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>

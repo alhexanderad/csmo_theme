@@ -1,0 +1,483 @@
+/** Tag start**/
+.tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 20;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 7px 14px 5px;
+  font-weight: 500;
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tag-2 {
+  float: left;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: -60px;
+  top: 30px;
+  text-align: center;
+  width: 200px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+  line-height: 28px;
+  background: #292929;
+  text-transform: uppercase;
+}
+
+.slide-2 {
+  margin-bottom: 50px;
+}
+
+/** Slick slider start**/
+.slick-slider-area {
+  position: relative;
+}
+
+.slick-slide-item {
+  padding: 0 15px !important;
+}
+
+.slick-arrow-buton {
+  position: absolute;
+  top: 43%;
+}
+
+.slick-arrow-buton {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  top: 43%;
+  border-radius: 50px;
+  color: #000;
+  z-index: 999;
+  background: #fff;
+  position: absolute;
+  font-size: 22px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  text-align: center;
+}
+
+.slick-next {
+  right: -15px;
+}
+
+.slick-prev {
+  left: -15px;
+}
+
+.slick-slide,
+.slick-slide:focus * {
+  outline: none !important;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+.slick-btn {
+  text-align: center;
+  max-width: 100px !important;
+  margin: 0 auto;
+  bottom: 16px;
+  border-radius: 5px;
+  height: 35px;
+  position: relative;
+}
+
+.slick-btn .slick-next {
+  right: 0px;
+}
+
+.slick-btn .slick-prev {
+  left: 0px;
+}
+
+.slick-btn .slick-arrow-buton {
+  width: 50px;
+  height: 35px;
+  line-height: 35px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  float: left;
+  border-right: solid 1px #e4e4e4;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+  background: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 12px;
+}
+
+.slick-btn .slick-arrow-buton {
+  color: #ff214f;
+}
+
+.slick-btn .sab-4 {
+  border-radius: 50px 0 0 50px;
+}
+
+.slick-btn .sab-3 {
+  border-radius: 0 50px 50px 0;
+}
+/** Property box start **/
+.car-box {
+  position: relative;
+  margin-bottom: 30px;
+  background: #fff;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  z-index: 9;
+  border-radius: 5px;
+}
+
+.car-thumbnail {
+  position: relative;
+}
+
+.car-thumbnail:before {
+  content: "";
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 8;
+  background: linear-gradient(to top, rgba(47, 45, 45, 0.9) 0%, rgba(0, 0, 0, 0.45) 35%, rgba(2, 2, 2, 0) 60%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 4px 4px 0 0;
+  opacity: 1;
+}
+
+.carbox-overlap-wrapper {
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: 998;
+  color: #FFF;
+  left: 0;
+  top: 0;
+}
+
+.overlap-box {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carbox-overlap-wrapper h2 {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+}
+
+.carbox-overlap-wrapper h4 {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  line-height: 26px;
+  color: #fff;
+}
+
+.car-magnify-gallery {
+  display: inline-block;
+}
+
+.car-thumbnail:hover>.carbox-overlap-wrapper {
+  visibility: visible;
+  top: 0;
+  cursor: pointer;
+  transition: all .15s linear;
+}
+
+.overlap-btns-area img {
+  display: none;
+}
+
+.overlap-btn {
+  border: solid 1px #fff;
+}
+
+.overlap-btn {
+  width: 36px;
+  height: 36px;
+  line-height: 35px;
+  display: inline-block;
+  color: #FFF;
+  margin: 16px 2px;
+  border-radius: 3px;
+  font-size: 13px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.overlap-btn:hover {
+  text-decoration: none;
+  color: #FFF;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  /* ...and now for the proper property */
+  transition: .5s;
+}
+
+.car-box img {
+  border-radius: 5px;
+}
+
+.car-box .detail .title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.car-box .detail .title a:hover {
+  color: #343a40;
+}
+
+.car-box .detail .location {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.car-box .detail .location a {
+  color: #5f5e5e;
+}
+
+.car-box .detail {
+  padding: 25px 20px 10px;
+}
+
+.car-box .facilities-list {
+  position: absolute;
+  bottom: 0;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.36);
+}
+
+.car-box .footer {
+  border-top: 1px solid #e5e5e5;
+  background: #fff;
+  font-size: 14px;
+}
+
+.car-box .footer .ratings {
+  font-size: 15px;
+  color: orange;
+}
+
+.car-box .footer {
+  color: #535353;
+  font-size: 15px;
+  border-top: solid 1px #efefef;
+}
+
+.car-box .footer .price {
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 20px;
+  margin-bottom: 0;
+  line-height: 49px;
+}
+
+.car-box .days {
+  line-height: 49px;
+  padding-left: 20px;
+}
+
+.car-box .facilities-list li {
+  list-style: none;
+  float: left;
+  width: 33.33%;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.car-box .facilities-list li span i {
+  margin-right: 5px;
+}
+
+/** Car box 3 **/
+.car-box-3 {
+  position: relative;
+  margin-bottom: 30px;
+  background: #fff;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.car-box-3:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.car-box-3 .detail {
+  padding: 25px 20px;
+}
+
+.car-box-3 .custom-list {
+  margin-bottom: 15px;
+}
+
+.car-box-3 .custom-list li {
+  font-size: 11px;
+  display: inline-block;
+  padding-right: 5px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.car-box-3 .custom-list li a {
+  color: #535353;
+}
+
+.car-box-3 .detail .title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.car-box-3 .detail .title a {
+  color: #212121;
+}
+
+.car-box-3 .detail .title a:hover {
+  color: #343a40;
+}
+
+.car-box-3 .detail .location {
+  margin-bottom: 15px;
+}
+
+.car-box-3 .detail .location a {
+  font-size: 14px;
+}
+
+.for {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.2);
+  padding: 5px 14px 3px;
+  font-weight: 600;
+  border-radius: 50px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #f9f9f9;
+  background: rgba(0, 0, 0, 0.36);
+}
+
+.car-box-3 .facilities-list li {
+  list-style: none;
+  float: left;
+  margin: 0 3px 3px 0;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 3px 10px;
+  border: solid 1px #e2e0e0;
+  border-radius: 3px;
+}
+
+.car-box-3 .facilities-list li i {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.car-box-3 .price-box {
+  bottom: 20px;
+}
+
+.car-box-3 .footer {
+  border-top: 1px solid #e5e5e5;
+  background: #fff;
+  font-size: 14px;
+}
+
+.car-box-3 .footer p {
+  line-height: 48px;
+  margin: 0 0 0 20px;
+  font-size: 15px;
+}
+
+.car-box-3 .footer ul li {
+  display: inline-block;
+  width: 48px;
+  margin: 0 0 0 -4px;
+}
+
+.car-box-3 .footer ul li a {
+  display: block;
+  font-size: 15px;
+  height: inherit;
+  line-height: 48px;
+  text-align: center;
+  width: 48px;
+  border-left: 1px solid #e5e5e5;
+  color: #535353;
+}
+
+.car-box-3 .footer {
+  color: #535353;
+  font-size: 15px;
+  border-top: solid 1px #efefef;
+}
+
+.car-box-3 .ratings {
+  line-height: 49px;
+  padding-left: 20px;
+}
+
+.car-box-2 .for {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}
+
+.car-box-3 .tag {
+  left: 15px;
+  right: inherit;
+}
+
+/** Price box start**/
+.price-box {
+  color: #fff;
+  text-align: right;
+  font-size: 17px;
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  z-index: 20;
+  font-weight: 600;
+  opacity: 0.9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.price-box span {
+  color: #fff;
+}
+
+.price-box .del {
+  color: red;
+  font-size: 15px;
+}

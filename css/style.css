@@ -1,0 +1,144 @@
+@import "./latest-cars.css";
+@import "./tag.css";
+@import "./icons.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+a {
+  cursor: pointer;
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #525252;
+
+}
+
+p {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #535353;
+}
+
+strong {
+  color: #535353;
+}
+
+span {
+  color: #535353;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Roboto', sans-serif;
+  color: #383737;
+  font-weight: 400;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #535353;
+}
+
+/* Navbar*/
+.navbar {
+  background-color: #fff;
+  height: 80px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 0.25rem;
+
+}
+
+.navbar-brand {
+  font-weight: 500;
+  color: #e61034;
+  font-size: 24px;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: red;
+}
+
+.hero-section {
+  background: url(../img/cars.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+
+}
+
+.hero-section::before {
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-section .container {
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+}
+
+@media(min-width:991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+  }
+}
