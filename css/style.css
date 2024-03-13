@@ -2,83 +2,98 @@
 @import "./tag.css";
 @import "./icons.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+:root {
+  /* Colores */
+  --color-primario: #e9ab4e;
+  --color-fondo: #212529;
+
+  /* Tamaños */
+  --tamanio-fuente: 16px;
+  --ancho-contenedor: 1200px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
+
+}
+
+body {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
-a {
-  cursor: pointer;
-  color: #4d4d4d;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #525252;
-
-}
-
-p {
-  font-size: 15px;
-  line-height: 26px;
-  font-weight: 500;
-  color: #535353;
-}
-
-strong {
-  color: #535353;
-}
-
-span {
-  color: #535353;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: 'Roboto', sans-serif;
-  color: #383737;
-  font-weight: 400;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  color: #535353;
-}
-
 /* Navbar*/
-.navbar {
-  background-color: #fff;
-  height: 80px;
-  margin: 10px;
-  border-radius: 5px;
-  padding: 0.25rem;
+.navbar-brand:hover,
+.navbar-brand:hover span,
+.navbar-brand:hover p.brand {
+  color: #e9ab4e;
+  /* Color heredado para el texto */
+  text-decoration: none;
+  /* Sin decoración de texto */
+  cursor: pointer;
+  /* Cursor predeterminado */
+}
 
+/*Para poder hacer cambio de color en navbar, transparente.*/
+.navbar {
+  background-color: transparent;
+  /* Color de fondo inicial */
+  transition: background-color 0.6s, box-shadow 0.6s;
+  /* Transición para color de fondo y sombra */
+  height: 80px;
+  /* Altura fija de la barra de navegación */
+  font-size: 24px;
+  font-weight: bold;
+  --bs-navbar-toggler-border-color: transparent;
 }
 
 .navbar-brand {
-  font-weight: 500;
-  color: #e61034;
-  font-size: 24px;
+  color: var(--color-primario);
+  position: relative;
+  font-size: 26px;
+  letter-spacing: 1px;
+
 }
 
+.brand {
+  color: #e9ab4e;
+  text-align: center;
+  padding: 0px;
+  margin-top: 1px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.navbar-brand span {
+  position: absolute;
+  bottom: 31px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  /* Alto del span */
+  background-color: var(--color-primario);
+  /* Color de la línea */
+}
+
+/*menu color start*/
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--color-primario);
+}
+
+.nav-link:hover {
+  color: var(--color-primario);
+}
+
+/*menu color end*/
 .navbar-toggler {
-  border: none;
+
   font-size: 1.25rem;
 }
 
@@ -88,16 +103,64 @@ ul {
   outline: none;
 }
 
+.navbar-toggler .custom-icon {
+  font-size: 38px;
+  font-weight: bold;
+  color: #e9ab4e;
+}
+
 .nav-link {
-  color: #666777;
-  font-weight: 500;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 16px;
   position: relative;
 }
 
-.nav-link:hover,
-.nav-link.active {
-  color: red;
+
+.btn.show,
+.btn:first-child:active {
+
+  border-color: var(--color-primario);
 }
+
+/*dropdown-start*/
+.dropdown {
+  background-color: var(--color-primario);
+
+}
+
+.dropdown i {
+  padding-right: 5px;
+}
+
+.dropdown .btn {
+  color: white;
+}
+
+.dropdown-menu {
+  z-index: 1000;
+  min-width: 2rem;
+  --bs-dropdown-border-radius: 0px;
+}
+
+.dropdown-menu li .dropdown-item {
+  padding: 2px 11px;
+  color: var(--color-primario);
+}
+
+.dropdown-menu[data-bs-popper] {
+  left: 0px;
+}
+
+
+.dropdown-item.active,
+.dropdown-item:hover {
+  color: black;
+  text-decoration: none;
+  background-color: white;
+}
+
+/*dropdown-end*/
 
 .hero-section {
   background: url(../img/cars.jpg) no-repeat center;
@@ -122,6 +185,42 @@ ul {
   position: relative;
 }
 
+/**/
+.offcanvas-header,
+.offcanvas-body {
+  background-color: var(--color-fondo);
+}
+
+.offcanvas-header {
+  color: var(--color-primario);
+  border-bottom: 1px solid var(--color-primario);
+}
+
+.btn-close {
+  --bs-btn-close-bg:transparent;
+}
+
+.btn-close .btn-bts {
+  position: relative;
+}
+
+.btn-close .btn-bts{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+
+}
+
+.btn-close .btn-bts i{
+
+
+  font-size: 32px;
+  font-weight: 900;
+ color: #f7b451;
+}
+/**/
+
+
 @media(min-width:991px) {
   .nav-link::before {
     content: "";
@@ -131,7 +230,7 @@ ul {
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-color: #009970;
+    background-color: var(--color-primario);
     visibility: hidden;
     transition: 0.3s ease-in-out;
   }
@@ -141,4 +240,55 @@ ul {
     width: 100%;
     visibility: visible;
   }
+}
+
+@media screen and (max-width: 321px) {
+  .navbar-brand {
+    font-size: 15px;
+    letter-spacing: none;
+  }
+
+  .brand {
+    margin-top: 0px;
+    font-size: 11px;
+  }
+
+  .navbar-brand span {
+    bottom: 23px;
+    height: 0.5px;
+  }
+
+  .dropdown {
+    left: 20px;
+  }
+
+  .dropdown .btn {
+    color: #212529;
+    width: 45px;
+    height: auto;
+    padding: 0px 4px;
+  }
+
+  .dropdown-toggle::after {
+
+    margin-left: -0.745em;
+  }
+
+  /* Ocultar el texto "INGLES" */
+  .dropdown .btn span {
+    display: none;
+  }
+
+  /* Mostrar el ícono "bi-globe-americas" */
+  .dropdown .btn i {
+    display: inline;
+    margin-right: 0.5em;
+    /* Espacio entre el ícono y el borde del botón */
+  }
+
+  /* Ocultar el menú desplegable */
+  .dropdown-menu {
+    display: none;
+  }
+
 }
