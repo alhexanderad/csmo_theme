@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import "./latest-cars.css";
 @import "./tag.css";
 @import "./icons.css";
+@import "./footer.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 :root {
   /* Colores */
@@ -55,8 +56,9 @@ body {
 .navbar-brand {
   color: var(--color-primario);
   position: relative;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 1px;
+  padding: 5px 0px;
 
 }
 
@@ -72,7 +74,7 @@ body {
 
 .navbar-brand span {
   position: absolute;
-  bottom: 31px;
+  bottom: 33px;
   left: 0;
   width: 100%;
   height: 2px;
@@ -169,23 +171,23 @@ body {
 
 }
 
-.hero-section::before {
-  background-color: rgba(0, 0, 0, 0.6);
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.hero-section .container {
+/*carousel-start*/
+/* Estilos para de contacto */
+.ct-item {
   height: 100vh;
-  z-index: 1;
+  /* Altura del carrusel */
   position: relative;
 }
 
-/**/
+/* Estilos para .c-img */
+.ct-img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.6);
+}
+
+/*Carousel-end*/
 .offcanvas-header,
 .offcanvas-body {
   background-color: var(--color-fondo);
@@ -197,27 +199,26 @@ body {
 }
 
 .btn-close {
-  --bs-btn-close-bg:transparent;
+  --bs-btn-close-bg: transparent;
 }
 
 .btn-close .btn-bts {
   position: relative;
 }
 
-.btn-close .btn-bts{
+.btn-close .btn-bts {
   position: absolute;
   top: 10px;
   right: 20px;
 
 }
 
-.btn-close .btn-bts i{
-
-
+.btn-close .btn-bts i {
   font-size: 32px;
   font-weight: 900;
- color: #f7b451;
+  color: #f7b451;
 }
+
 /**/
 
 
