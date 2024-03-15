@@ -7,12 +7,18 @@
 
 :root {
   /* Colores */
-  --color-primario: #e9ab4e;
-  --color-fondo: #212529;
+  --color-primario: #f6b759;
+  --color-secundario:#FFB039;
+  --color-fondo: #faf2e985;
+  --color-title:#212529;
 
   /* Tamaños */
   --tamanio-fuente: 16px;
   --ancho-contenedor: 1200px;
+  
+  /* Tipo de Letras*/
+  --font-principal:"Fjalla One",
+    sans-serif;
 }
 
 * {
@@ -23,9 +29,10 @@
 }
 
 body {
-  font-family: "Fjalla One", sans-serif;
+  font-family: var(--font-principal);
   font-weight: 400;
   font-style: normal;
+  background-color: var(--color-fondo);
 }
 
 /* Navbar*/
@@ -125,6 +132,33 @@ body {
   border-color: var(--color-primario);
 }
 
+
+.offcanvas-header {
+  color: var(--color-primario);
+  border-bottom: 1px solid var(--color-primario);
+}
+
+.btn-close {
+  --bs-btn-close-bg: transparent;
+}
+
+.btn-close .btn-bts {
+  position: relative;
+}
+
+.btn-close .btn-bts {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+
+}
+
+.btn-close .btn-bts i {
+  font-size: 32px;
+  font-weight: 900;
+  color: #f7b451;
+}
+
 /*dropdown-start*/
 .dropdown {
   background-color: var(--color-primario);
@@ -172,15 +206,14 @@ body {
 }
 
 /*carousel-start*/
-/* Estilos para de contacto */
-.ct-item {
+.crs-item {
   height: 100vh;
   /* Altura del carrusel */
   position: relative;
 }
 
 /* Estilos para .c-img */
-.ct-img {
+.crs-img {
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -188,39 +221,18 @@ body {
 }
 
 /*Carousel-end*/
-.offcanvas-header,
-.offcanvas-body {
-  background-color: var(--color-fondo);
+
+/*Featured - Start*/
+.rcmd-car {
+  padding: 100px 0px;
 }
 
-.offcanvas-header {
-  color: var(--color-primario);
-  border-bottom: 1px solid var(--color-primario);
+.rcmd-main_title {
+  color:var(--color-title);
+  padding-bottom: 40px;
 }
 
-.btn-close {
-  --bs-btn-close-bg: transparent;
-}
-
-.btn-close .btn-bts {
-  position: relative;
-}
-
-.btn-close .btn-bts {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-
-}
-
-.btn-close .btn-bts i {
-  font-size: 32px;
-  font-weight: 900;
-  color: #f7b451;
-}
-
-/**/
-
+/*Featured - End*/
 
 @media(min-width:991px) {
   .nav-link::before {
