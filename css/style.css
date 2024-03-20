@@ -231,8 +231,27 @@ body {
   color:var(--color-title);
   padding-bottom: 40px;
 }
-
 /*Featured - End*/
+
+/*offcanvas-Start*/
+.offcancas,
+.offcanvas-end {
+  background-color: var(--color-title);
+}
+/*offcanvas-End*/
+
+/*Contact_intro-Start */
+  .ct_i-container{
+    background: var(--color-secundario);
+    padding: 35px 150px;
+  }
+
+  .ct_i-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/*Contact_intro-End */
 
 @media(min-width:991px) {
   .nav-link::before {
