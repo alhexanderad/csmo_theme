@@ -19,6 +19,13 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   /** Slick Sliders*/
+
+  $(document).ready(function () {
+    $('.overlap-btns-area').lightGallery({
+      selector: '.car-magnify-gallery a',
+    });
+  });
+  
   $('.slick-carousel').each(function () {
     var slider = $(this);
     $(this).slick({

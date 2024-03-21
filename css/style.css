@@ -8,16 +8,17 @@
 :root {
   /* Colores */
   --color-primario: #f6b759;
-  --color-secundario:#FFB039;
-  --color-fondo: #faf2e985;
-  --color-title:#212529;
+  --color-secundario: #FFB039;
+  --color-fondo: #faf2e99c;
+  --color-subtitle: #5f5e5e;
+  --color-title: #212529;
 
   /* Tamaños */
   --tamanio-fuente: 16px;
   --ancho-contenedor: 1200px;
-  
+
   /* Tipo de Letras*/
-  --font-principal:"Fjalla One",
+  --font-principal: "Fjalla One",
     sans-serif;
 }
 
@@ -162,6 +163,7 @@ body {
 /*dropdown-start*/
 .dropdown {
   background-color: var(--color-primario);
+  border-radius: 5px;
 
 }
 
@@ -186,6 +188,7 @@ body {
 
 .dropdown-menu[data-bs-popper] {
   left: 0px;
+  border-radius: 5px;
 }
 
 
@@ -222,35 +225,57 @@ body {
 
 /*Carousel-end*/
 
-/*Featured - Start*/
+/*Featured Car-Start*/
+.ftd-car{
+  padding:100px 0px;
+}
+/*Featured Car-End*/
+
+/*recomendaciones - Start*/
 .rcmd-car {
   padding: 100px 0px;
 }
 
 .rcmd-main_title {
-  color:var(--color-title);
+  color: var(--color-title);
   padding-bottom: 40px;
 }
-/*Featured - End*/
+
+/*recomendaciones - End*/
 
 /*offcanvas-Start*/
 .offcancas,
 .offcanvas-end {
   background-color: var(--color-title);
 }
+
 /*offcanvas-End*/
 
 /*Contact_intro-Start */
-  .ct_i-container{
-    background: var(--color-secundario);
-    padding: 35px 150px;
-  }
+.ct_i-container {
+  background: var(--color-secundario);
+  padding: 35px 150px;
+}
 
-  .ct_i-row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.ct_i-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ct_i-row h3 {
+  font-size: 29px;
+  margin: 0;
+  font-weight: 100;
+}
+
+.ct_i-row .btn-primary {
+  background-color: var(--color-title);
+  padding: 13px 50px 11px 50px;
+  border: 1px solid var(--color-title);
+  text-transform: uppercase;
+  font-size: 18px;}
+
 /*Contact_intro-End */
 
 @media(min-width:991px) {

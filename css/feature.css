@@ -111,13 +111,15 @@
   border-right: solid 1px #e4e4e4;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
   background: white;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: 900;
   position: absolute;
   bottom: 12px;
 }
 
 .slick-btn .slick-arrow-buton {
-  color: #ff214f;
+  color: var(--color-secundario);
+
 }
 
 .slick-btn .sab-4 {
@@ -323,6 +325,7 @@
   background: #fff;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .car-box-3:hover {
@@ -356,7 +359,8 @@
 }
 
 .car-box-3 .detail .title a {
-  color: #212121;
+  color: var(--color-secundario);
+  text-decoration: none;
 }
 
 .car-box-3 .detail .title a:hover {
@@ -368,7 +372,10 @@
 }
 
 .car-box-3 .detail .location a {
+  text-decoration: none;
+
   font-size: 14px;
+  color: var(--color-subtitle);
 }
 
 .for {
@@ -386,6 +393,10 @@
   text-transform: uppercase;
   color: #f9f9f9;
   background: rgba(0, 0, 0, 0.36);
+}
+
+.car-box-3 .detail .clearfix {
+  padding-left: 0px !important;
 }
 
 .car-box-3 .facilities-list li {
@@ -473,6 +484,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/* cambio de color de precio*/
 .price-box span {
   color: #fff;
 }
