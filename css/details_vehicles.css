@@ -1,0 +1,55 @@
+/* Estilos para de contacto */
+.vh-dt-item {
+  height: 60vh;
+  /* Altura del carrusel */
+  position: relative;
+}
+
+/* Estilos para .c-img */
+.vh-dt-img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.6);
+}
+
+.vh-dt-page {
+  padding: 100px 0px;
+}
+
+.carousel-indicators img {
+  margin-top: 29px;
+  width: 90px;
+  display: block;
+}
+
+.carousel-indicators button {
+  width: max-content !important;
+}
+
+/*Desaparecen la barra de button carousel indicadores*/
+.carousel-indicators [data-bs-target] {
+  box-sizing: border-box;
+}
+
+/*Botones*/
+.vh-dt-table .row .vh-dt-btn{
+  background-color: var(--color-secundario);
+  width: 150px;
+  padding: 2px 35px;
+  font-size: 16px;
+  border: 1px solid var(--color-secundario);
+}
+
+
+
+.vh-dt-page .vh-dt-img {
+  padding-bottom: 100px;
+}
+.vh-dt-page .vh-dt-details {
+  padding-top: 50px;
+}
+
+.vh-dt-page .vh-dt-details h1 {
+  margin-left: 12px;
+}
