@@ -358,4 +358,25 @@ body {
     width: 100px;
 
   }
+
+    /*contacto horario start*/
+    .contacto {
+      position: static;
+      /* Cambia a la posición estática por defecto */
+    }
+  
+    .contacto-hour {
+      position: static;
+      /* Cambia a la posición estática por defecto */
+      border: none;
+      /* Elimina el borde */
+      border-top: none;
+      /* Elimina el borde superior */
+      background-color: transparent;
+      /* Hace transparente el fondo */
+      padding: 0;
+      /* Elimina el relleno */
+    }
+  
+    /*Contacto horario end*/
 }
