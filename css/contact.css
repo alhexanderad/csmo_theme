@@ -80,3 +80,59 @@ body {
   object-position: center;
   filter: brightness(0.6);
 }
+
+.contacto-btn{
+  background-color: #e9ab4e;
+  border: 1px solid #e9ab4e;
+  color: #212529 ;
+}
+
+.contacto-btn:hover {
+  background-color: #212529;
+  border: 1px solid #212529;
+  color: #e9ab4e;
+}
+.contacto-info{
+  list-style-type: none;
+
+  
+}
+
+.contacto-info li{
+  margin-bottom: 10px;
+}
+.contacto-info span{
+  color: #5a5a5adc;
+}
+.contacto-info li i{
+  margin-right: 10px;
+  color: #FFB039;
+}
+
+.contacto-info li i:hover {
+
+  color: #212529;
+}
+
+.contacto-icons {
+  display: flex;
+}
+
+.contacto-icons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #7a787888;
+  margin-right: 5px;
+  /* Espacio entre los iconos */
+}
+
+.contacto-icons i:hover {
+
+  border: 1px solid #FFB039;
+  background-color: #FFB039;
+
+}

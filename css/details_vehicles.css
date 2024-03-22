@@ -13,9 +13,11 @@
   filter: brightness(0.6);
 }
 
-.vh-dt-page {
-  padding: 100px 0px;
+.vh-dt-page{
+  padding-top: 50px;
 }
+
+
 
 .carousel-indicators img {
   margin-top: 29px;
@@ -34,22 +36,57 @@
 
 /*Botones*/
 .vh-dt-table .row .vh-dt-btn{
+
   background-color: var(--color-secundario);
-  width: 150px;
-  padding: 2px 35px;
+  width: 120px;
+  padding: 0;
   font-size: 16px;
   border: 1px solid var(--color-secundario);
 }
 
 
-
-.vh-dt-page .vh-dt-img {
-  padding-bottom: 100px;
-}
 .vh-dt-page .vh-dt-details {
+  margin-top: 50px;
   padding-top: 50px;
+
 }
 
 .vh-dt-page .vh-dt-details h1 {
   margin-left: 12px;
 }
+
+.vh-dt-details{
+ padding: 100px 0px;
+}
+
+.vh-dt-details h1{
+  padding: 15px 0px;
+}
+/*Accordion*/
+
+.vh-dt-sfca ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+}
+
+.vh-dt-sfca ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-linea);
+  padding: 5px;
+  font-size: 13px;
+  font-weight: 100;
+}
+.vh-dt-sfca ul li strong {
+  flex: 1;
+  margin-right: 10px;
+  color: var(--color-subtitle);
+  font-size: 13px;
+  font-weight: 100;
+  /* Ajusta el espacio entre el strong y el contenido */
+}
+.accordion-button:not(.collapsed) {
+  color: var(--color-title);
+  background-color: var(--color-primario);}

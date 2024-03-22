@@ -12,6 +12,7 @@
   --color-fondo: #faf2e99c;
   --color-subtitle: #5f5e5e;
   --color-title: #212529;
+  --color-linea: #7a787888;
 
   /* Tamaños */
   --tamanio-fuente: 16px;
@@ -348,4 +349,13 @@ body {
     display: none;
   }
 
+  /*detalles de viheculos*/
+  .vh-dt-row h1{
+    padding-top: 90px;
+  }
+  .vh-dt-table .row .vh-dt-btn {
+
+    width: 100px;
+
+  }
 }
