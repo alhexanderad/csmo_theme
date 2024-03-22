@@ -1,0 +1,105 @@
+
+.inventory-carousel {
+  height: 60vh;
+}
+
+.inventory-img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.5);
+}
+
+.inventory-cars{
+  padding-top: 100px;
+}
+
+
+.inventory-sale{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-align: center;
+    padding: 4px 16px;
+    border-radius: 2px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    font-weight: 500;
+    background: var(--color-secundario);
+    text-transform: uppercase;
+}
+
+.inventory-featured{
+
+  position: absolute;
+  transform: rotate(-45deg);
+  left: -60px;
+  top: 30px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  width: 200px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+
+  background: var(--color-secundario);
+  text-transform: uppercase;
+}
+
+.inventory-page{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 90px;
+}
+
+
+.inventary-detail{
+ padding: 25px 20px;
+}
+
+
+.inventary-detail .inventary-title {
+  margin-bottom: 0px;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.inventary-detail .inventary-title a {
+  color: var(--color-title);
+  font-size: 20px;
+  text-decoration: none;
+
+}
+
+.inventary-detail  .inventary-title a:hover{
+  color: var(--color-secundario);
+}
+
+.inventary-location  {
+margin-bottom: 15px;
+}
+
+.inventary-location a {
+  text-decoration: none;
+  color: var(--color-subtitle);
+  font-size: 14px;
+
+}
+
+
+.inventary-detail .inventary-list{
+  padding-left: 0px;
+}
+.page-link{
+  color: var(--color-secundario);
+}
+
+.active>.page-link,
+.page-link.active {
+
+  background-color: var(--color-secundario);
+}
