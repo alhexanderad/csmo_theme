@@ -61,37 +61,38 @@ body {
   /* Altura fija de la barra de navegación */
   font-size: 24px;
   font-weight: bold;
-  --bs-navbar-toggler-border-color: transparent;
 }
 
 .navbar-brand {
-  color: var(--color-primario);
+  color: #e9ab4e;
   position: relative;
-  font-size: 24px;
-  letter-spacing: 1px;
-  padding: 5px 0px;
-
 }
 
 .brand {
   color: #e9ab4e;
   text-align: center;
   padding: 0px;
-  margin-top: 1px;
+  margin-top: 3px;
   margin-bottom: 0px;
-  font-size: 18px;
-  letter-spacing: 0.5px;
+  font-size: 12px;
 }
 
 .navbar-brand span {
   position: absolute;
-  bottom: 33px;
+  bottom: 25px;
   left: 0;
   width: 100%;
   height: 2px;
   /* Alto del span */
-  background-color: var(--color-primario);
+  background-color: #e9ab4e;
   /* Color de la línea */
+}
+/*cambio de scroll de navbar*/
+.navbar-scrolled {
+  background-color: var(--color-title);
+  /* Nuevo color de fondo cuando se desplaza */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  /* Sombra cuando se desplaza */
 }
 
 /*menu color start*/
