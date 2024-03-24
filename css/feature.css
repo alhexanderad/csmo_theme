@@ -27,7 +27,7 @@
   color: #fff;
   font-weight: 500;
   line-height: 28px;
-  background: #292929;
+  background: var(--color-primario);
   text-transform: uppercase;
 }
 
